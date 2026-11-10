@@ -1,12 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { Nav } from './nav/nav';
+import { Container } from './container/container';
+import { Footer } from './footer/footer';
+import { TablaUsuarios } from './tabla-usuarios/tabla-usuarios';
+import { CreateCustomer } from './create-customer/create-customer';
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [Nav, Container,Footer,TablaUsuarios, CreateCustomer],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('ejercicio1');
+
 }

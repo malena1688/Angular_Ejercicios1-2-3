@@ -1,0 +1,16 @@
+<h2>Crear nuevo cliente</h2>
+
+<form [formGroup]="clienteForm" (ngSubmit)="enviarFormulario()">
+
+    <label>Nombre:</label>
+    <input type="text" formControlName="nombre">
+
+    <label>CIF:</label>
+    <input type="text" formControlName="cif">
+
+    <label>Localidad:</label>
+    <input type="text" formControlName="localidad">
+
+    <button type="submit">Guardar cliente</button>
+
+</form>
